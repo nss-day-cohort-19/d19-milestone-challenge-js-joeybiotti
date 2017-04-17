@@ -1,30 +1,21 @@
-console.log("why won't you just make a stupid tree?");
+console.log("test");
 
-// var character = document.getElementById('input').value;
-// var height = document.getElementById('height').value;
-// var button = document.getElementById('btn')
-// var userInput = [character += height]
+var input = document.getElementById("input");
+var height = document.getElementById("height");
+var submit = document.getElementById("submit").addEventListener("click", treeSeed);
+var clear = document.getElementById("clear").addEventListener('click', startOver);
 
-// // button.onclick = function() {
-// // 	console.log(" ");
-// // };
-
-// function tree (growTree) {
-// 	for (i = 0; i < usernput.length; i++) {
-// 		tree += userInput[i];
-// }
-
-var input = document.getElementById("input").value;
-var height = document.getElementById("height").value;
-var submit = document.getElementById("submit").addEventListener("click", getHeight);
-var clear = document.getElementById("clear");
-
-
-function getHeight (height){
-parseInt(height);
+function treeSeed (whatever){
+	console.log(input.value += height.value);
 };
 
+function startOver (terminate){
+	document.getElementById("input").reset();
+	document.getElementById("height").reset();
+}
+
 function tree (growTree){
+
 };
 
 if (input === " , "){
