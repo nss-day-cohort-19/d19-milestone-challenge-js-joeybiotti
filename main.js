@@ -5,13 +5,17 @@ var height = document.getElementById("height");
 var submit = document.getElementById("submit").addEventListener("click", treeSeed);
 var clear = document.getElementById("clear").addEventListener('click', startOver);
 
+function heightNum (heightAsInt){
+	var heightNum = parseInt(height);
+};
+
 function treeSeed (whatever){
 	console.log(input.value += height.value);
 };
 
-function startOver (terminate){
-	document.getElementById("input").reset();
-	document.getElementById("height").reset();
+function startOver (eraseText){
+	document.getElementById("input").value = " ";
+	document.getElementById("height").value =" ";
 }
 
 function tree (growTree){
