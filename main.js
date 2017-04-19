@@ -5,10 +5,12 @@ var height = document.getElementById("height");
 var submit = document.getElementById("submit").addEventListener("click", hitSubmit);
 var clear = document.getElementById("clear").addEventListener('click', startOver);
 
+var tallTree =
 function heightNum (heightAsInt){
 	var heightNum = parseInt(height);
 };
 
+var treeGrown =
 function tree (growTree){
 	for (var i = 0; i < height.length; i++) {
 	input[i]}
@@ -32,5 +34,5 @@ function hitSubmit () {
 		alert("Value for height needed")
 	} else if (input == " " && height == " "){
 		alert("Both fields must be complete")
-	} else (console.log(tree))
+	} else (console.log(treeGrown += tallTree))
 };
