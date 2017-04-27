@@ -12,7 +12,7 @@ function treeGrow(growTree){
 	for (var i = 0; i < input.length; i++) {
 		input[i]
 	}console.log(input.value);
-}
+};
 
 function submit(hitSubmit){
 	if(input = " "){
@@ -22,10 +22,14 @@ function submit(hitSubmit){
 	} else if(height= " ", input= " "){
 		alert("Value for both input and height needed")
 	} else(console.log(input, height));
-}
+};
 
 
-
+height.addEventListener("keypress", function(growTree){
+	if(growTree.which = 13){
+		input.growTree;
+	}
+});
 
 
 
