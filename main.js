@@ -1,57 +1,49 @@
-console.log("test");
+var heightInput = document.getElementById("height");
+var userInput = document.getElementById("input");
+var submitBtn = document.getElementById("submit");
+var clearBtn = document.getElementById("clear");
 
-var input = document.getElementById("input");
-var height = document.getElementById("height")
-var grow = document.getElementById("submit").addEventListener("click", treeGrow);
+//button event / key up events
 
-function heightNum (treeHeight){
-	var heightOfTree = parseInt(height);
+submitBtn.addEventListener("click", grow);
+heightInput.addEventListener("keyup", hitEnter);
+userInput.addEventListener("keyup", hitEnter);
+clearBtn.addEventListener("click", erase);
+
+//grow tree function
+
+function grow (event){
+		var height = heightInput.value;
+		var character = userInput.value;
+		console.log(" ".repeat(height) + character);
+		for (var i = 1; i <= height.length; i++) {
+			console.log(" ".repeat(height - i) + " "+ character.repeat(i + 1))
+		}
+}
+
+//clear function - function also works as keyup if user last clicked on clear- works for me.
+
+function erase(event){
+	document.getElementById("input").value=" ";
+	document.getElementById("height").value=" ";
+	console.log("clear cut the forest and build a subdivision");
 };
 
-function treeGrow(growTree){
-	for (var i = 0; i < input.length; i++) {
-		input[i]
-	}console.log(input.value);
-};
+//key up event function
 
-function submit(hitSubmit){
-	if(input = " "){
-		alert("Value for input needed")
-	} else if(height= " "){
-		alert("value for input needed")
-	} else if(height= " ", input= " "){
-		alert("Value for both input and height needed")
-	} else(console.log(input, height));
-};
-
-
-height.addEventListener("keypress", function(growTree){
-	if(growTree.which = 13){
-		input.growTree;
+function hitEnter (event){
+	if(event.which === 13){
+		(grow)
+	}else{
+		(blankSpaces)
 	}
-});
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//check if fields are blank
+	function blankSpaces(event){
+		if(heightInput.value===" " || userInput.value===" "){
+			alert("Both fields need value!")
+		}else{
+			(grow)
+		}
+	};

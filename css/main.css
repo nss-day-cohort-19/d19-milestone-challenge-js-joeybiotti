@@ -1,0 +1,16 @@
+body {
+	background-color: #f0f5f9;
+	color: #44633F;
+}
+
+input{
+	box-shadow: 3px 3px 3px grey;
+	background-color: lightgrey;
+}
+button{
+	margin: 10px;
+	padding: 8px;
+	box-shadow: 2px 2px 2px grey;
+	background-color: #5CAB7D;
+	color: #44633F;
+}
