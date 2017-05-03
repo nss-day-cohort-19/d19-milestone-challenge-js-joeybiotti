@@ -17,7 +17,8 @@ function grow (event){
 		var character = userInput.value;
 		console.log(" ".repeat(height) + character);
 		for (var i = 1; i <= height.length; i++) {
-			console.log(" ".repeat(height - i) + " "+ character.repeat(i + 1))
+			console.log(" ".repeat(height - i) + " " + character.repeat(i + 1)) * (" ".repeat(height - i) + " "+ character.repeat(i + 1));
+
 		}
 }
 
